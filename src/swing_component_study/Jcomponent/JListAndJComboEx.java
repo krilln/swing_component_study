@@ -138,7 +138,7 @@ public class JListAndJComboEx extends JFrame implements ActionListener, ItemList
 				String name = (String) cmb2.getSelectedItem();
 				int index = cmb2.getSelectedIndex();
 				JOptionPane.showMessageDialog(null, index + "번째 선택된 이름" + name);
-				
+				//
 			}
 		});
 		panel.add(cmb2);
