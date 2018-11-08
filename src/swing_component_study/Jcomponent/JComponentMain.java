@@ -23,6 +23,7 @@ public class JComponentMain extends JFrame implements ActionListener {
 	private JButton btn_5;
 	private JButton btn_6;
 	private JButton btn_7;
+	private JButton btn8;
 	
 	
 
@@ -88,9 +89,16 @@ public class JComponentMain extends JFrame implements ActionListener {
 		btn_7 = new JButton("RadioButtonItemEventEx");
 		btn_7.addActionListener(this);
 		contentPane.add(btn_7);
+		
+		btn8 = new JButton("SliderChangeEx");
+		btn8.addActionListener(this);
+		contentPane.add(btn8);
 	}
 
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btn8) {
+			do_btnNewButton_actionPerformed(e);
+		}
 		if (e.getSource() == btn_7) {
 			do_btn_7_actionPerformed(e);
 		}
@@ -137,5 +145,7 @@ public class JComponentMain extends JFrame implements ActionListener {
 	protected void do_btn_6_actionPerformed(ActionEvent e) {
 	}
 	protected void do_btn_7_actionPerformed(ActionEvent e) {
+	}
+	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
 	}
 }
