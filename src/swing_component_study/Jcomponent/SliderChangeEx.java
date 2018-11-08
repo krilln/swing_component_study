@@ -134,7 +134,7 @@ public class SliderChangeEx extends JFrame implements ActionListener, ChangeList
 		}
 	}
 	protected void do_slider_R_stateChanged(ChangeEvent e) {
-			
+		
 	}
 	protected void do_slider_G_stateChanged(ChangeEvent e) {
 		
