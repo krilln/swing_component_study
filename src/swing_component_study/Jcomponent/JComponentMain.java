@@ -4,13 +4,12 @@ import java.awt.EventQueue;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.ComponentOrientation;
 
 public class JComponentMain extends JFrame implements ActionListener {
 
@@ -97,7 +96,7 @@ public class JComponentMain extends JFrame implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btn8) {
-			do_btnNewButton_actionPerformed(e);
+			do_btn_8_actionPerformed(e);
 		}
 		if (e.getSource() == btn_7) {
 			do_btn_7_actionPerformed(e);
@@ -128,24 +127,35 @@ public class JComponentMain extends JFrame implements ActionListener {
 		frame.setVisible(true);
 	}
 	protected void do_btn_actionPerformed(ActionEvent e) {
-		
+		showFrame(new ButtonEx());
 	}
 	protected void do_btn_1_actionPerformed(ActionEvent e) {
+		showFrame(new CheckBoxEx());
 	}
 	protected void do_btn_2_actionPerformed(ActionEvent e) {
+		showFrame(new CheckBoxItemEventEx());
 	}
 	protected void do_btn_3_actionPerformed(ActionEvent e) {
+		showFrame(new jcomponentEx());
 	}
 	protected void do_btn_4_actionPerformed(ActionEvent e) {
+		showFrame(new JLabel());
 	}
 	protected void do_btn_5_actionPerformed(ActionEvent e) {
 		 showFrame(new JListAndJComboEx());
-		
 	}
 	protected void do_btn_6_actionPerformed(ActionEvent e) {
+		try {
+			showFrame(new JTextFieldOtherEx());
+		} catch (ParseException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 	}
 	protected void do_btn_7_actionPerformed(ActionEvent e) {
+		showFrame(new RadioButtonItemEventEx());
 	}
-	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
+	protected void do_btn_8_actionPerformed(ActionEvent e) {
+		showFrame(new SliderChangeEx());
 	}
 }

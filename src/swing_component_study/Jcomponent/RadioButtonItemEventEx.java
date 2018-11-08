@@ -60,7 +60,7 @@ public class RadioButtonItemEventEx extends JFrame implements ItemListener {
 	}
 	private void initComponents() {
 		setTitle("라디오버튼Item Event 예제");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
